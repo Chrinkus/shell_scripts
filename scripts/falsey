@@ -1,0 +1,17 @@
+#! /bin/bash
+
+# falsey: testing test behaviour in scripts
+
+strbool=
+if [ -n "$booly" ]; then			# string checks with -n, -z
+	echo "uninitialized is true!"
+else
+	echo "uninitialized is false!"
+fi
+
+numbool=
+if ((numbool)); then
+	echo "uninitialized numbers are true!"
+else
+	echo "uninitialized numbers are false!"
+fi
